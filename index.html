@@ -42,10 +42,13 @@
 
 <img src="win_predict_bar.png" alt="win_predict_bar" width="600" height="400" style="margin-left: 22em;">
 
-<audio controls autostart="true">
-  <source src="track1.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
+click <audio id="ID001" source src="track1.mp3"></audio><button onclick="playAudio('ID001')" type="button">Play</button>
+<script>
+function playAudio(audio_element) {
+	var x = document.getElementById(audio_element);
+	x.play();
+}
+</script>
 
 </body>
 </html>
